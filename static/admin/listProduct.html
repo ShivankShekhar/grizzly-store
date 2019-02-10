@@ -1,31 +1,14 @@
 <html>
     <head>
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;  
-                padding: 0px;
-                overflow: hidden;
-                background-color: rgb(230, 227, 217);
-                font-size: 20px;
-            }
-                
-            li {
-                float: left;   
-                color: rgb(0, 0, 0); 
-                padding: 5px 20px;
-                text-align: center;    
-            }
-
-            .inputField{
-                height:35px;
-                font-size:18px;
-                border-top:none;
-                border-left:none;
-                border-right:none;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+        <title>List Product</title>
     </head>
+    
     <body>
         <ul>
             <li>
@@ -36,41 +19,48 @@
                 </ul>
             </li>
             <li style=" padding:15px 40px;"><input type="text" style="background-color: rgb(230, 227, 217); border:none;font-size: 20px;border-radius: 10px;width:200px;" placeholder="Search"></li>
-            <li style=" padding:15px 55px;  float:right;"><button style="border:none; float:right;width:130px;height:30px;border-radius: 20px; background-color:rgba(83, 83, 83, 0.281)"><font style="font-size: 18px;">Logout</font></button></li>
+            <li style=" padding:15px 55px;  float:right;"><button class="buttons" style="width:130px;height:30px;border-radius: 20px; background-color:rgba(83, 83, 83, 0.281)"><font style="font-size: 18px;">Logout</font></button></li>
             <li style=" padding:15px 15px;  float:right;">Welcome, Admin< Name >...</li>
             <li style=" padding:15px 0px; float:right;"><img src="./images/notify.png" style="height: 22px; width:22px;"></li>
         </ul>
-
  
-    <div style="margin-left:10%;"> 
-    
-</div>  
+<section name= "Profile" style="background-color: rgb(230, 227, 217); position:absolute;left:35px;top:110px; padding:10px; height:470px; width:250px;" name="PROFILE">
+        <div style="color: rgb(255, 255, 255); padding:10px;background-color: rgb(194, 194, 194)">PROFILE 
+        <button class="buttons" style="background-color: rgb(194, 194, 194);color: rgb(255, 255, 255);">Edit</button></div><br>
+        <div align="center">
+            <img src="" style="height:130px;width:130px;"><br><br>
+            <b>Helen Cho</b><br>
+            <br>
+            ID<br>
+            GRZY4533<br>
+            <br>
+            Designation<br>
+            Sr. Admin<br>
+            <br>
+            Office<br>
+            NYC,NY,USA
+        </div>
+</section>  
+ 
+    <div style="margin-left: 25%;margin-top: 50px;height:460px; width:900px;">
+            <ul class="nav nav-tabs" style="width:700px;">
+                <li class="active" style="width:350px;font-size:30px; padding:0px;"><a data-toggle="tab" href="#PROD">PRODUCTS</a></li>
+                <li style="width:350px;padding: 0px;font-size:30px;"><a data-toggle="tab" href="#VEND">VENDORS</a></li> 
+            </ul> 
+            <div  class="tab-content" style="width:700px;height:420px;">
+            
+               
 
-<section style="background-color: rgb(230, 227, 217);float:left;position:absolute;left:35px;top:120px; padding:10px; width:250px;" name="PROFILE">
-    <div style="color: rgb(255, 255, 255); padding:10px;background-color: rgb(194, 194, 194)">PROFILE 
-    <button style="background-color: rgb(194, 194, 194);color: rgb(255, 255, 255);border:none; float:right;">Edit</button></div><br>
-    <div align="center">
-        <img src="" style="height:130px;width:130px;"><br><br>
-        <b>Helen Cho</b><br>
-        <br>
-        ID<br>
-        GRZY4533<br>
-        <br>
-        Designation<br>
-        Sr. Admin<br>
-        <br>
-        Office<br>
-        NYC,NY,USA
+                <div id="PROD" class="tab-pane fade  in active">
+                       
+                </div>
+                <div id="VEND" class="tab-pane fade">
+                        <h3>VENDORS</h3>
+                </div> 
+            
+            </div>
     </div>
-</section>
 
 
-
-<br>
-<div style="margin-top:160px;margin-right: 20px;">
-<button style="border:none; float:right;width:100px;height:30px;border-radius: 20px;background-color: rgba(49, 48, 46, 0.973)"><font style="color: rgb(223, 223, 223);font-size:17px;">Finish</font></button><br>
-<br>
-<button style="border:none; float:right;width:100px;height:30px;border-radius: 20px;background-color: rgba(167, 167, 167, 0.849)"><font style="color: rgb(102, 99, 99);font-size:17px;">Cancel</font></button>
-</div>
 </body>
 </html>

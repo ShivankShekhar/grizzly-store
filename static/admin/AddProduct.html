@@ -1,31 +1,15 @@
 <html>
-    <head>
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;  
-                padding: 0px;
-                overflow: hidden;
-                background-color: rgb(230, 227, 217);
-                font-size: 20px;
-            }
-                
-            li {
-                float: left;   
-                color: rgb(0, 0, 0); 
-                padding: 5px 20px;
-                text-align: center;    
-            }
-
-            .inputField{
-                height:35px;
-                font-size:18px;
-                border-top:none;
-                border-left:none;
-                border-right:none;
-            }
-        </style>
+    
+    <head> 
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+        <title>Add Product</title>
     </head>
+
     <body>
         <ul>
             <li>
@@ -35,52 +19,66 @@
                 <li style=" padding:10px 15px;">STORE</li> 
                 </ul>
             </li>
-            <li style=" padding:15px 40px;"><input type="text" style="background-color: rgb(230, 227, 217); border:none;font-size: 20px;border-radius: 10px;width:200px;" placeholder="Search"></li>
-            <li style=" padding:15px 55px;  float:right;"><button style="border:none; float:right;width:130px;height:30px;border-radius: 20px; background-color:rgba(83, 83, 83, 0.281)"><font style="font-size: 18px;">Logout</font></button></li>
-            <li style=" padding:15px 15px;  float:right;">Welcome, Admin< Name >...</li>
-            <li style=" padding:15px 0px; float:right;"><img src="./images/notify.png" style="height: 22px; width:22px;"></li>
+            <li style=" padding:15px 40px;"><input type="text" style=" border:none;font-size: 20px;border-radius: 10px;width:200px;" placeholder="Search"></li>
+            <li style=" padding:15px 55px;float:right;"><button style="border:none; float:right;width:130px;height:30px;border-radius: 20px; background-color:rgba(83, 83, 83, 0.281)"><font style="font-size: 18px;">Logout</font></button></li>
+            <li style=" padding:15px 15px;float:right;">Welcome, Admin< Name >...</li>
+            <li style=" padding:15px 0px;float:right;"><img src="./images/notify.png" style="height: 22px; width:22px;"></li>
         </ul>
 
+        <section name= "Profile" style="background-color: rgb(230, 227, 217); position:absolute;left:35px;top:110px; padding:10px; height:470px; width:250px;" name="PROFILE">
+                <div style="color: rgb(255, 255, 255); padding:10px;background-color: rgb(194, 194, 194)">PROFILE 
+                <button class="buttons" style="background-color: rgb(194, 194, 194);color: rgb(255, 255, 255);">Edit</button></div><br>
+                <div align="center">
+                    <img src="" style="height:130px;width:130px;"><br><br>
+                    <b>Helen Cho</b><br>
+                    <br>
+                    ID<br>
+                    GRZY4533<br>
+                    <br>
+                    Designation<br>
+                    Sr. Admin<br>
+                    <br>
+                    Office<br>
+                    NYC,NY,USA
+                </div>
+        </section>
 
-<section style="margin-left: 50%;" name="Vendor"> 
-    <h1 style="font-size: 30px;margin-top: 10%;">VENDORS</h1> 
-    <div style="margin-left:10%;"> 
-    <input type="text" class="inputField" placeholder="Enter Product ID"><br>
-    <select class="inputField">
-            <option value="Category" >Category</option> 
+        <div style="margin-left: 25%;margin-top: 50px;height:460px; width:700px;">
+            <ul class="nav nav-tabs" style="width:700px;">
+                <li class="active" style="width:350px;font-size:30px; padding:0px;"><a data-toggle="tab" href="#PROD">PRODUCTS</a></li>
+                <li style="width:350px;padding: 0px;font-size:30px;"><a data-toggle="tab" href="#VEND">VENDORS</a></li> 
+            </ul>
             
-    </select><br>
-    <input type="text" placeholder="Name" class="inputField"><br>
-    <input type="text"  class="inputField" placeholder="Description"><br>
-    <input type="number" class="inputField" placeholder="Price"><br>
-</div>
-</section>
+            <div  class="tab-content" style="width:700px;height:420px;">
+            
+                <div id="PROD" class="tab-pane fade in active">
+                    <br>
+                    <div style="font-size: 15px; float:left;width:400px;height:340px;background-color: rgb(236, 236, 236);">
+                    <b>&nbsp; &nbsp;1<br>
+                    <center> <img src="" style="border: dashed; height:200px;width: 200px;margin-top:50px;">
+                        <br><br><br>Add Images</b>
+                    </center>
+                    <br>
+                    
+                    </div>   
+                    <div style="float:right;"> 
+                        <input type="text" class="inputField" placeholder="Enter Product ID"><br>
+                        <select class="inputField"><option value="Category" >Category</option></select><br>
+                        <input type="text" placeholder="Name" class="inputField"><br>
+                        <input type="text"  class="inputField" placeholder="Description"><br>
+                        <input type="number" class="inputField" placeholder="Price"><br>
+                    </div> 
+                </div> 
 
-<section style="background-color: rgb(230, 227, 217);float:left;position:absolute;left:35px;top:120px; padding:10px; width:250px;" name="PROFILE">
-    <div style="color: rgb(255, 255, 255); padding:10px;background-color: rgb(194, 194, 194)">PROFILE 
-    <button style="background-color: rgb(194, 194, 194);color: rgb(255, 255, 255);border:none; float:right;">Edit</button></div><br>
-    <div align="center">
-        <img src="" style="height:130px;width:130px;"><br><br>
-        <b>Helen Cho</b><br>
-        <br>
-        ID<br>
-        GRZY4533<br>
-        <br>
-        Designation<br>
-        Sr. Admin<br>
-        <br>
-        Office<br>
-        NYC,NY,USA
-    </div>
-</section>
+                <div id="VEND" class="tab-pane fade">
+                        <h3>VENDORS</h3>
+                </div> 
+            
+            </div>
+        </div>
+  
+        <button class="buttons submit">Add </button> 
+        <button class="buttons cancel"> Cancel </button>
 
-
-
-<br>
-<div style="margin-top:160px;margin-right: 20px;">
-<button style="border:none; float:right;width:100px;height:30px;border-radius: 20px;background-color: rgba(49, 48, 46, 0.973)"><font style="color: rgb(223, 223, 223);font-size:17px;">Add</font></button><br>
-<br>
-<button style="border:none; float:right;width:100px;height:30px;border-radius: 20px;background-color: rgba(167, 167, 167, 0.849)"><font style="color: rgb(102, 99, 99);font-size:17px;">Cancel</font></button>
-</div>
-</body>
+    </body>
 </html>
